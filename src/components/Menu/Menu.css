@@ -1,10 +1,10 @@
 .Logo {
-    max-width: 168px;
+    max-width: 300px;
 }
 
 @media (max-width: 800px) {
     .Logo {
-        max-width: 105px;
+        max-width: 180px;
     }
 }
 
@@ -32,7 +32,7 @@ body {
 
 @media (max-width: 800px) {
     .Menu {
-        height: 40px;
+        height: 60px;
         justify-content: center;
     }
     body {
@@ -68,7 +68,8 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        background: var(--primary);
+        background: yellow;
+        color: black;
         border-radius: 0;
         border: 0;
         text-align: center;

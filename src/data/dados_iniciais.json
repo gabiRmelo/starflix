@@ -1,183 +1,207 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
-      "cor": "#6BD1FF",
+      "titulo": "Filmes",
+      "link": "/",
+      "cor": "#00008B",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Quais são os filmes da saga?",
+        "url": "https://revistagalileu.globo.com/Cultura/Cinema/noticia/2019/12/star-wars-quais-sao-os-filmes-da-saga.html"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Star Wars: A ameaça fantasma",
+          "url": "https://www.youtube.com/watch?v=TgnyVyIXcWU"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Star Wars: O ataque dos clones",
+          "url": "https://www.youtube.com/watch?v=gYbW1F_c9eM"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "Star Wars: A vingança dos Sith",
+          "url": "https://www.youtube.com/watch?v=znpliCR0_Kw"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "Star Wars: Uma nova esperança",
+          "url": "https://www.youtube.com/watch?v=jVrf_bKTjo4"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "Star Wars: O império contra-ataca",
+          "url": "https://www.youtube.com/watch?v=4KnAyxgZ3Vo"
         },
         {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+          "titulo": "Star Wars: O retorno de Jedi",
+          "url": "https://www.youtube.com/watch?v=BT-fVW24-q4"
         },
         {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+          "titulo": "Star Wars: O despertar da força",
+          "url": "https://www.youtube.com/watch?v=4r0287tUEgk"
         },
         {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "Star Wars: Os últimos Jedi",
+          "url": "https://www.youtube.com/watch?v=-di3XYRxyHY"
+        },
+        {
+          "titulo": "Star Wars: A ascensão Skywalker",
+          "url": "https://www.youtube.com/watch?v=Cmgv3fwoxQw"
+        },
+        {
+          "titulo": "Rogue One: Uma história Star Wars",
+          "url": "https://www.youtube.com/watch?v=lHmhrCClQ2c"
+        },
+        {
+          "titulo": "Han Solo: Uma história Star Wars",
+          "url": "https://www.youtube.com/watch?v=ROn_0Jv0G98"
         }        
       ]
     },
     {
-      "titulo": "Back End",
-      "cor": "#00C86F",
+      "titulo": "Séries",
+      "cor": "#ff4500",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "Além dos filmes...",
+        "url": "https://www.starwars.com/series"
       },
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "titulo": "Star Wars: The Clone Wars",
+          "url": "https://www.youtube.com/watch?v=ZLW2jkd6E7g"
         },
         {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "titulo": "Star Wars Rebels",
+          "url": "https://www.youtube.com/watch?v=xmXp802sFgQ"
         },
         {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          "titulo": "Star Wars Resistance",
+          "url": "https://www.youtube.com/watch?v=m7Pls-vYWwM"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-        }, 
-        {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "The Mandalorian",
+          "url": "https://www.youtube.com/watch?v=aOC8E8z_ifw"
         }
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
-      "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
-      },
+      "titulo": "Jogos",
+      "cor": "#ff00ff",
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "Star Wars Electronic Battle Command",
+          "url": "https://www.youtube.com/watch?v=ByCAYrq4YXk"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "The Empire Strikes Back, Atari 2600",
+          "url": "https://www.youtube.com/watch?v=NcWGvwYWHgY"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          "titulo": "Star Wars - Best Arcade Game (Atari 1983)",
+          "url": "https://www.youtube.com/watch?v=iXOTExRQJSE"
         },
         {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "Arcade Game: Return of the Jedi (1984 Atari)",
+          "url": "https://www.youtube.com/watch?v=Bh3SZsznNhA"
+        },
+        {
+          "titulo": "Arcade Game: The Empire Strikes Back (1985 Atari)",
+          "url": "https://www.youtube.com/watch?v=7FEYrqbsm5M"
+        },
+        {
+          "titulo": "Star Wars (NES) Playthrough",
+          "url": "https://www.youtube.com/watch?v=52Y8qi7SVTA"
+        },
+        {
+          "titulo": "Super Star Wars (1992)",
+          "url": "https://www.youtube.com/watch?v=NnsGbd8WMNg"
+        },
+        {
+          "titulo": "Star Wars: X-Wing",
+          "url": "https://www.youtube.com/watch?v=7h31lBdeFHU"
+        },
+        {
+          "titulo": "Rogue Squadron",
+          "url": "https://www.youtube.com/watch?v=1pgXNNRxps8"
+        },
+        {
+          "titulo": "Star Wars: Dark Forces (1995)",
+          "url": "https://www.youtube.com/watch?v=ACtL1R2vztk"
+        },
+        {
+          "titulo": "Star Wars Galaxies",
+          "url": "https://www.youtube.com/watch?v=SP7ugJ84JUk"
         }
       ]
     },
     {
-      "titulo": "Filmes",
-      "cor": "orange",
+      "titulo": "Crítica",
+      "cor": "#00ff00",
       "videos": [
         {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+          "titulo": "STAR WARS: A ASCENSÃO SKYWALKER é bom? - Vale Crítica",
+          "url": "https://www.youtube.com/watch?v=mXnZEo-O_FU"
         },
         {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+          "titulo": "STAR WARS: OS ÚLTIMOS JEDI (2017) - Crítica",
+          "url": "https://www.youtube.com/watch?v=LZN8J7JhfoU"
         },
         {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+          "titulo": "STAR WARS: O DESPERTAR DA FORÇA (2015) - Crítica",
+          "url": "https://www.youtube.com/watch?v=G9wuIz2icT0"
         },
         {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+          "titulo": "Star Wars: Episódio I - A Ameaça Fantasma (1999) - Crítica Rápida",
+          "url": "https://www.youtube.com/watch?v=O2GqgHQXNLA"
         }
       ]
     },
     {
-      "titulo": "Games",
+      "titulo": "Outros",
       "cor": "red",
-      "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
-      },
       "videos": [
         {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+          "titulo": "Como fazer um sabre de luz",
+          "url": "https://www.youtube.com/watch?v=p12eqQDEDIk"
         },
         {
-          "titulo": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+          "titulo": "Entenda a história",
+          "url": "https://www.youtube.com/watch?v=4Phizo62ioA"
         },
         {
-          "titulo": "God of War 4",
-          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+          "titulo": "STAR WARS - Nostalgia",
+          "url": "https://www.youtube.com/watch?v=6mBxfiqQ3lQ"
         },
         {
-          "titulo": "Resident Evil 8",
-          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
-        },
-        {
-          "titulo": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+          "titulo": "6 TECNOLOGIAS STAR WARS QUE EXISTEM NA VIDA REAL!",
+          "url": "https://www.youtube.com/watch?v=phqdr12sVfU"
         }
       ]
     },
     {
-      "titulo": "Aprendendo a aprender tecnologia",
-      "cor": "#6b5be2",
-      "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
-      },
+      "titulo": "Melhores cenas",
+      "cor": "#9400dd",
       "videos": [
         {
-          "titulo": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+          "titulo": "OS MELHORES MOMENTOS DE STAR WARS DE TODOS OS TEMPOS",
+          "url": "https://www.youtube.com/watch?v=wSLX9FYgsVU"
         },
         {
-          "titulo": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+          "titulo": "#06 - Melhores Cenas - O Nascimento de Darth Vader",
+          "url": "https://www.youtube.com/watch?v=Q9DL7tjYaYs"
         },
         {
-          "titulo": "Frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "Rey destrói o Palpatine DUBLADO | Star Wars: A Ascensão Skywalker (2019)",
+          "url": "https://www.youtube.com/watch?v=A8n67p98dag"
         },
         {
-          "titulo": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+          "titulo": "Yoda aparece para Luke | Star Wars: Os últimos Jedi | StarWarsFanBR",
+          "url": "https://www.youtube.com/watch?v=SUfZAyVrhpo"
         },
         {
-          "titulo": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+          "titulo": "Star Wars - Episódio V: O Império Contra-Ataca - 'Eu sou o teu pai' (Dublado em Português do Brasil)",
+          "url": "https://www.youtube.com/watch?v=Sua-tTUo7SU"
+        },
+        {
+          "titulo": "Star Wars Os Últimos Jedi - Luke Skywalker vs Kylo Ren DUBLADO",
+          "url": "https://www.youtube.com/watch?v=5Jq5x8U5koU"
         }
       ]
     }

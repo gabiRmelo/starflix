@@ -54,18 +54,20 @@ ContentAreaContainer.Description = styled.p`
 ContentAreaContainer.Title = styled.h2`
   font-style: normal;
   font-weight: 300;
-  font-size: 40px;
-  line-height: 1;
+  font-size: 25px;
+  line-height: 1.4;
   margin-top: 0;
   margin-bottom: 32px;
 
   @media (max-width: 800px) {
-    font-size: 32px;
+    font-size: 18px;
     text-align: center;
   }
 `;
 
 export const BannerMainContainer = styled.section`
+  font-size: 15px;
+  line-height: 1.5;
   height: 80vh;
   position: relative;
   color: #fff;
