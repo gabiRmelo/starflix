@@ -23,6 +23,8 @@
     padding-right: 5%;
     background: var(--black);
     border-bottom: 2px solid var(--primary);
+    background-image: url('../../assets/img/background_01.jpg');
+    background-size: 15%;
 }
 
 body {

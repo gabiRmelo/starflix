@@ -62,6 +62,7 @@ ContentAreaContainer.Title = styled.h2`
   @media (max-width: 800px) {
     font-size: 18px;
     text-align: center;
+    margin-bottom: 0;
   }
 `;
 
@@ -103,21 +104,21 @@ export const BannerMainContainer = styled.section`
 `;
 
 export const WatchButton = styled.button`
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Press Start 2P', cursive, sans-serif;
   box-sizing: border-box;
   cursor: pointer;
-  padding: 16px 24px;
+  padding: 16px 20px;
   font-style: normal;
-  font-weight: bold;
   font-size: 16px;
   outline: none;
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
-  border: 1px solid transparent;
-  color: var(--black);
-  background: var(--white);
-  border-color: var(--black);
+  border: 5px solid transparent;
+  color: var(--white);
+  background: var(--black);
+  border: double;
+  border-color: yellow;
   transition: opacity .3s;
   display: none;
   margin: 0 auto;
