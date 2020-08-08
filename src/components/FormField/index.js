@@ -8,24 +8,24 @@ const FormFieldWrapper = styled.div`
     min-height: 150px;
   }
   input[type="color"] {
-    padding-left: 56px;
+    padding-left: 70px;
   }
 `;
 
 const Label = styled.label``;
 
 Label.Text = styled.span`
-  color: #E5E5E5;
+  color: black;
   height: 57px;
   position: absolute; 
   top: 0;
-  left: 16px;
+  left: 8px;
   
   display: flex;
   align-items: center;
   
   transform-origin: 0% 0%;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   
@@ -33,17 +33,17 @@ Label.Text = styled.span`
 `;
 
 const Input = styled.input`
-  background: #53585D;
-  color: #F5F5F5;
+  background: whitesmoke;
+  color: black;
   display: block;
   width: 100%;
   height: 57px;
-  font-size: 18px;
+  font-size: 14px;
   
   outline: 0;
-  border: 0;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid #53585D;
+  border: 4px solid yellow;
+  border-top: 4px solid yellow;
+  border-bottom: 4px solid yellow;
   
   padding: 16px 16px;
   margin-bottom: 45px;
@@ -53,7 +53,7 @@ const Input = styled.input`
   transition: border-color .3s;
   
   &:focus {
-    border-bottom-color: var(--primary);
+    border-bottom-color: #53585D;
   }
   &:focus:not([type='color']) + ${Label.Text} {
     transform: scale(.6) translateY(-10px);
