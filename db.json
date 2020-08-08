@@ -1,0 +1,30 @@
+{
+    "categorias": [
+      {
+        "id": 1,
+        "titulo": "Filmes",
+        "cor": "#00008B",
+        "link_extra": {
+          "text": "Quais são os filmes da saga?",
+          "url": "https://revistagalileu.globo.com/Cultura/Cinema/noticia/2019/12/star-wars-quais-sao-os-filmes-da-saga.html"
+        }
+      },
+      {
+        "id": 2,
+        "titulo": "Séries",
+        "cor": "#ff4500",
+        "link_extra": {
+          "text": "Além dos filmes...",
+          "url": "https://www.starwars.com/series"
+        }
+      }
+     ],
+    "videos": [
+      {
+        "id": 1,
+        "categoriaId": 1,
+        "titulo": "SEO com React",
+        "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      }
+    ]
+  }
