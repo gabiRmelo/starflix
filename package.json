@@ -17,12 +17,13 @@
   },
   "scripts": {
     
-    "server": "node ./server.js",
-    "dev": "concurrently \"react-scripts start\" \"npm run server\"",
-    "start": "npm run server",
+    "start": "node ./server.js",
+    "dev": "concurrently \"react-scripts start\" \"node ./server.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server:static": "json-server --watch ./src/data/db.json --port 8080",
+    "server": "node ./server.js"
     
   },
   "eslintConfig": {
@@ -50,3 +51,4 @@
     "eslint-plugin-react-hooks": "^4.0.8"
   }
 }
+
