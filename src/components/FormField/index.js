@@ -73,7 +73,7 @@ const Input = styled.input`
 function FormField({
   label, type, name, value, onChange, suggestions,
 }) {
-  const fieldId = `id_${name}`; /* Obs */
+  const fieldId = `id_${name}`; 
   const isTypeTextarea = type === 'textarea';
   const tag = isTypeTextarea ? 'textarea' : 'input';
 
@@ -83,7 +83,7 @@ function FormField({
   return (
     <FormFieldWrapper>
       <Label
-        htmlFor={fieldId} /* Obs */
+        htmlFor={fieldId} 
       >
         <Input
           as={tag}

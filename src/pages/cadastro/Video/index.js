@@ -11,9 +11,9 @@ function CadastroVideo() {
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
   const { handleChange, values } = useForm({
-    titulo: 'Vídeo padrão',
-    url: 'https://www.youtube.com/watch?time_continue=5&v=hhQ3RtvmfEg&feature=emb_logo',
-    categoria: 'Filmes',
+    titulo: '',
+    url: '',
+    categoria: '',
   });
 
   useEffect(() => {
@@ -24,7 +24,7 @@ function CadastroVideo() {
       });
   }, []);
 
-  console.log(categorias);
+  // console.log(categorias);
 
   return (
     <PageDefault>
@@ -33,16 +33,14 @@ function CadastroVideo() {
       <form onSubmit={(event) => {
         event.preventDefault();
 
-        const categoriaEscolhida = categorias.find((categoria) => {
-          return categoria.titulo === values.categoria;
-        });
+        const categoriaEscolhida = categorias.find((categoria) => categoria.titulo === values.categoria);
 
-        console.log('categoriaEscolhida', categoriaEscolhida);
+        // console.log('categoriaEscolhida', categoriaEscolhida);
 
         videosRepository.create({
           titulo: values.titulo,
           url: values.url,
-          categoriaId: 1,
+          categoriaId: categoriaEscolhida.id,
         })
 
           .then(() => {
@@ -70,23 +68,26 @@ function CadastroVideo() {
           name="categoria"
           value={values.categoria}
           onChange={handleChange}
-          suggestions= {
+          suggestions={
             [
               'Filmes',
               'Séries',
               'Games',
             ]
-          } 
+          }
         />
 
         <Button type="submit">
-          Cadastrar
+          Cadastrar Vídeo
         </Button>
       </form>
-
+      
       <Link to="/cadastro/categoria">
-        Cadastrar Categoria
+        <Button>  
+          Cadastrar Nova Categoria
+        </Button>
       </Link>
+      
     </PageDefault>
   );
 }

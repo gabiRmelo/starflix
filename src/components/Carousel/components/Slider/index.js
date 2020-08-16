@@ -21,7 +21,7 @@ const Container = styled.ul`
   }
   
   .slick-prev {
-    left: 0;
+    left: -50px;
   }
   .slick-next {
     right: 16px;

@@ -17,22 +17,9 @@ function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
-    if (window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categorias';
-      fetch(URL)
-        .then(async (respostaDoServer) => {
-          if (respostaDoServer.ok) {
-            const resposta = await respostaDoServer.json();
-            setCategorias(resposta);
-            return;
-          }
-          throw new Error('Não foi possível pegar os dados');
-        });
-    }
-  }, []);
-
-  { /* useEffect(() => {
-    const URL_TOP = 'https://starflix2020.herokuapp.com/categorias';
+    const URL_TOP = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://starflix2020.herokuapp.com/categorias';
     fetch(URL_TOP)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
@@ -40,8 +27,7 @@ function CadastroCategoria() {
           ...resposta,
         ]);
       });
-      
-  }); */ }
+  }, []);
 
   return (
     <PageDefault>
@@ -114,22 +100,24 @@ function CadastroCategoria() {
         </Button>
       </form>
 
-      {/* {categorias.length === 0 && (
+      {categorias.length === 0 && (
         <div>
           Carregando...
         </div>
-      )} */}
+      )}
 
       <ul>
-        {categorias.map((categoria, indice) => (
-          <li key={`${categoria}${indice}`}>
+        {categorias.map((categoria) => (
+          <li key={`${categoria.titulo}`}>
             {categoria.titulo}
           </li>
         ))}
       </ul>
 
       <Link to="/">
-        Starflix Home
+        <Button>
+          Starflix Home
+        </Button>
       </Link>
     </PageDefault>
   );

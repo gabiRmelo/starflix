@@ -17,6 +17,15 @@
         "text": "Além dos filmes...",
         "url": "https://www.starwars.com/series"
       }
+    },
+    {
+      "id": 3,
+      "titulo": "Games",
+      "cor": "#ff4500",
+      "link_extra": {
+        "text": "Além dos filmes...",
+        "url": "https://www.starwars.com/series"
+      }
     }
   ],
   "videos": [
@@ -30,43 +39,31 @@
       "titulo": "Vídeo padrão",
       "url": "https://www.youtube.com/watch?time_continue=5&v=hhQ3RtvmfEg&feature=emb_logo",
       "categoriaId": 1,
-      "id": 2
-    },
-    {
-      "titulo": "Vídeo padrão",
-      "url": "https://www.youtube.com/watch?time_continue=5&v=hhQ3RtvmfEg&feature=emb_logo",
-      "categoriaId": 1,
-      "id": 3
-    },
-    {
-      "titulo": "Vídeo padrão",
-      "url": "https://www.youtube.com/watch?time_continue=5&v=hhQ3RtvmfEg&feature=emb_logo",
-      "categoriaId": 1,
-      "id": 4
-    },
-    {
-      "titulo": "Vídeo padrão",
-      "url": "https://www.youtube.com/watch?time_continue=5&v=hhQ3RtvmfEg&feature=emb_logo",
-      "categoriaId": 1,
       "id": 5
     },
     {
-      "titulo": "Vídeo padrão",
-      "url": "https://www.youtube.com/watch?time_continue=5&v=hhQ3RtvmfEg&feature=emb_logo",
+      "titulo": "um lugar",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE",
       "categoriaId": 1,
       "id": 6
     },
     {
-      "titulo": "Vídeo padrão 2",
-      "url": "https://www.youtube.com/watch?time_continue=5&v=hhQ3RtvmfEg&feature=emb_logo",
-      "categoriaId": 1,
+      "titulo": "outro",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE",
+      "categoriaId": 2,
       "id": 7
     },
     {
-      "titulo": "Vídeo padrão 3",
-      "url": "https://www.youtube.com/watch?time_continue=5&v=hhQ3RtvmfEg&feature=emb_logo",
-      "categoriaId": 1,
+      "titulo": "njnsxj",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE",
+      "categoriaId": 3,
       "id": 8
+    },
+    {
+      "titulo": "kcbe",
+      "url": "https://www.youtube.com/watch?v=TgnyVyIXcWU",
+      "categoriaId": 3,
+      "id": 9
     }
   ]
 }
