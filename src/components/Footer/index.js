@@ -1,5 +1,6 @@
 import React from 'react';
 import { FooterBase } from './styles';
+import Heart from '../../assets/img/heart.png';
 
 function Footer() {
   return (
@@ -12,6 +13,7 @@ function Footer() {
         {' '}
         <a href="https://www.alura.com.br/">
           Imersão React da Alura
+          <img className="Heart" src={Heart} alt="Coração Amarelo" />
         </a>
       </p>
     </FooterBase>

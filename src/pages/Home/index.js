@@ -4,6 +4,7 @@ import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import PageDefault from '../../components/PageDefault';
 import categoriasRepository from '../../repositories/categorias';
+import Carregando from '../../components/Carregando';
 
 function Home() {
   const [dadosIniciais, setDadosIniciais] = useState([]);
@@ -23,7 +24,9 @@ function Home() {
   return (
     <PageDefault paddingAll={0}>
 
-      {dadosIniciais.length === 0 && (<div>Loading...</div>)}
+      {dadosIniciais.length === 0 && (
+        <Carregando/>
+      )}
 
       {dadosIniciais.map((categoria, indice) => {
         if (indice === 0) {
@@ -32,7 +35,7 @@ function Home() {
               <BannerMain
                 videoTitle={dadosIniciais[0].videos[0].titulo}
                 url={dadosIniciais[0].videos[0].url}
-                videoDescription={dadosIniciais[0].videos[0].description}
+                videoDescription={dadosIniciais[0].videos[0].descricao}
               />
               <Carousel
                 ignoreFirstVideo

@@ -14,6 +14,7 @@ function CadastroVideo() {
     titulo: '',
     url: '',
     categoria: '',
+    descricao: '',
   });
 
   useEffect(() => {
@@ -41,6 +42,7 @@ function CadastroVideo() {
           titulo: values.titulo,
           url: values.url,
           categoriaId: categoriaEscolhida.id,
+          descricao: values.descricao,
         })
 
           .then(() => {
@@ -60,6 +62,14 @@ function CadastroVideo() {
           label="URL"
           name="url"
           value={values.url}
+          onChange={handleChange}
+        />
+
+        <FormField
+          label="Descrição"
+          type="textarea"
+          name="descricao"
+          value={values.descricao}
           onChange={handleChange}
         />
 

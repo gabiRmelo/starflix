@@ -4,12 +4,16 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
+import categoriasRepository from '../../../repositories/categorias';
+import Carregando from '../../../components/Carregando';
 
 function CadastroCategoria() {
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '',
+    text: '',
+    url: '',
   };
 
   const { handleChange, values, clearForm } = useForm(valoresIniciais);
@@ -29,29 +33,39 @@ function CadastroCategoria() {
       });
   }, []);
 
+  function handleSubmit(event) {
+    event.preventDefault()
+    try {
+      categoriasRepository
+        .create({
+          titulo: values.titulo,
+          cor: values.cor,
+          descricao: values.descricao,
+        })
+        .then(() => {
+          setCategorias([...categorias, values])
+          clearForm()
+          //toast.success('Categoria cadastrada com sucesso!')
+        })
+    } catch (error) {
+      //toast.error('Não foi possível cadastar a caterdoria.')
+    }
+  }
+
   return (
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {values.nome}
+        {values.titulo}
       </h1>
 
-      <form onSubmit={function handleSubmit(infosDoEvento) {
-        infosDoEvento.preventDefault();
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
-
-        clearForm();
-      }}
-      >
+      <form onSubmit={handleSubmit}>
 
         <FormField
           label="Nome da Categoria"
           type="text"
-          name="nome"
-          value={values.nome}
+          name="titulo"
+          value={values.titulo}
           onChange={handleChange}
         />
 
@@ -95,15 +109,30 @@ function CadastroCategoria() {
             </label>
           </div> */}
 
-        <Button>
-          Cadastrar
+      <h1>Link Extra:</h1>
+
+        <FormField
+          label="Texto"
+          type="text"
+          name="text"
+          value={values.text}
+          onChange={handleChange}
+        />
+
+        <FormField
+          label="URL"
+          name="url"
+          value={values.url}
+          onChange={handleChange}
+        />
+
+        <Button type="submit">
+          Cadastrar Categoria
         </Button>
       </form>
 
       {categorias.length === 0 && (
-        <div>
-          Carregando...
-        </div>
+        <Carregando/>
       )}
 
       <ul>

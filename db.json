@@ -19,51 +19,310 @@
       }
     },
     {
-      "id": 3,
-      "titulo": "Games",
-      "cor": "#ff4500",
-      "link_extra": {
-        "text": "Além dos filmes...",
-        "url": "https://www.starwars.com/series"
-      }
+      "titulo": "Jogos",
+      "cor": "#ff00ff",
+      "descricao": "",
+      "id": 3
+    },
+    {
+      "titulo": "Crítica",
+      "cor": "#00ff00",
+      "descricao": "",
+      "id": 4
+    },
+    {
+      "titulo": "Outros",
+      "cor": "#ff0000",
+      "descricao": "",
+      "id": 5
+    },
+    {
+      "titulo": "Melhores cenas",
+      "cor": "#9400dd",
+      "descricao": "",
+      "id": 6
     }
   ],
   "videos": [
     {
       "id": 1,
       "categoriaId": 1,
-      "titulo": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "titulo": "Star Wars: A ameaça fantasma",
+      "url": "https://www.youtube.com/watch?v=TgnyVyIXcWU",
+      "descricao": "Obi-Wan e seu mentor embarcam em uma perigosa aventura na tentativa de salvar o planeta das garras de Darth Sidious. Durante a viagem, eles conhecem um habilidoso menino e decidem treiná-lo para se tornar um Jedi. Mas o tempo irá revelar que as coisas nem sempre são o que aparentam ser."
     },
     {
-      "titulo": "Vídeo padrão",
-      "url": "https://www.youtube.com/watch?time_continue=5&v=hhQ3RtvmfEg&feature=emb_logo",
+      "titulo": "Star Wars: O ataque dos clones",
+      "url": "https://www.youtube.com/watch?v=gYbW1F_c9eM",
       "categoriaId": 1,
+      "descricao": "",
+      "id": 2
+    },
+    {
+      "titulo": "Star Wars: A vingança dos Sith",
+      "url": "https://www.youtube.com/watch?v=znpliCR0_Kw",
+      "categoriaId": 1,
+      "descricao": "",
+      "id": 3
+    },
+    {
+      "titulo": "Star Wars: Uma nova esperança",
+      "url": "https://www.youtube.com/watch?v=jVrf_bKTjo4",
+      "categoriaId": 1,
+      "descricao": "",
+      "id": 4
+    },
+    {
+      "titulo": "Star Wars: O império contra-ataca",
+      "url": "https://www.youtube.com/watch?v=4KnAyxgZ3Vo",
+      "categoriaId": 1,
+      "descricao": "",
       "id": 5
     },
     {
-      "titulo": "um lugar",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE",
+      "titulo": "Star Wars: O retorno de Jedi",
+      "url": "https://www.youtube.com/watch?v=BT-fVW24-q4https://www.youtube.com/watch?v=BT-fVW24-q4",
       "categoriaId": 1,
+      "descricao": "",
       "id": 6
     },
     {
-      "titulo": "outro",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE",
-      "categoriaId": 2,
+      "titulo": "Star Wars: O despertar da força",
+      "url": "https://www.youtube.com/watch?v=4r0287tUEgk",
+      "categoriaId": 1,
+      "descricao": "",
       "id": 7
     },
     {
-      "titulo": "njnsxj",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE",
-      "categoriaId": 3,
+      "titulo": "Star Wars: Os últimos Jedi",
+      "url": "https://www.youtube.com/watch?v=-di3XYRxyHY",
+      "categoriaId": 1,
+      "descricao": "",
       "id": 8
     },
     {
-      "titulo": "kcbe",
-      "url": "https://www.youtube.com/watch?v=TgnyVyIXcWU",
-      "categoriaId": 3,
+      "titulo": "Star Wars: A ascensão Skywalker",
+      "url": "https://www.youtube.com/watch?v=Cmgv3fwoxQw",
+      "categoriaId": 1,
+      "descricao": "",
       "id": 9
+    },
+    {
+      "titulo": "Rogue One: Uma história Star Wars",
+      "url": "https://www.youtube.com/watch?v=lHmhrCClQ2c",
+      "categoriaId": 1,
+      "descricao": "",
+      "id": 10
+    },
+    {
+      "titulo": "Han Solo: Uma história Star Wars",
+      "url": "https://www.youtube.com/watch?v=ROn_0Jv0G98",
+      "categoriaId": 1,
+      "descricao": "",
+      "id": 11
+    },
+    {
+      "titulo": "Star Wars: The Clone Wars",
+      "url": "https://www.youtube.com/watch?v=ZLW2jkd6E7g",
+      "categoriaId": 2,
+      "descricao": "",
+      "id": 12
+    },
+    {
+      "titulo": "Star Wars Rebels",
+      "url": "https://www.youtube.com/watch?v=xmXp802sFgQ",
+      "categoriaId": 2,
+      "descricao": "",
+      "id": 13
+    },
+    {
+      "titulo": "Star Wars Resistance",
+      "url": "https://www.youtube.com/watch?v=m7Pls-vYWwM",
+      "categoriaId": 2,
+      "descricao": "",
+      "id": 14
+    },
+    {
+      "titulo": "The Mandalorian",
+      "url": "https://www.youtube.com/watch?v=aOC8E8z_ifw",
+      "categoriaId": 2,
+      "descricao": "",
+      "id": 15
+    },
+    {
+      "titulo": "Star Wars Electronic Battle Command",
+      "url": "https://www.youtube.com/watch?v=ByCAYrq4YXk",
+      "categoriaId": 3,
+      "descricao": "",
+      "id": 16
+    },
+    {
+      "titulo": "The Empire Strikes Back, Atari 2600",
+      "url": "https://www.youtube.com/watch?v=NcWGvwYWHgY",
+      "categoriaId": 3,
+      "descricao": "",
+      "id": 17
+    },
+    {
+      "titulo": "Star Wars - Best Arcade Game (Atari 1983)",
+      "url": "https://www.youtube.com/watch?v=iXOTExRQJSE",
+      "categoriaId": 3,
+      "descricao": "",
+      "id": 18
+    },
+    {
+      "titulo": "Arcade Game: Return of the Jedi (1984 Atari)",
+      "url": "https://www.youtube.com/watch?v=Bh3SZsznNhA",
+      "categoriaId": 3,
+      "descricao": "",
+      "id": 19
+    },
+    {
+      "titulo": "Arcade Game: The Empire Strikes Back (1985 Atari)",
+      "url": "https://www.youtube.com/watch?v=7FEYrqbsm5M",
+      "categoriaId": 3,
+      "descricao": "",
+      "id": 20
+    },
+    {
+      "titulo": "Star Wars (NES) Playthrough",
+      "url": "https://www.youtube.com/watch?v=52Y8qi7SVTA",
+      "categoriaId": 3,
+      "descricao": "",
+      "id": 21
+    },
+    {
+      "titulo": "Super Star Wars (1992)",
+      "url": "https://www.youtube.com/watch?v=NnsGbd8WMNg",
+      "categoriaId": 3,
+      "descricao": "",
+      "id": 22
+    },
+    {
+      "titulo": "Star Wars: X-Wing",
+      "url": "https://www.youtube.com/watch?v=7h31lBdeFHU",
+      "categoriaId": 3,
+      "descricao": "",
+      "id": 23
+    },
+    {
+      "titulo": "Rogue Squadron",
+      "url": "https://www.youtube.com/watch?v=1pgXNNRxps8",
+      "categoriaId": 3,
+      "descricao": "",
+      "id": 24
+    },
+    {
+      "titulo": "Star Wars: Dark Forces (1995)",
+      "url": "https://www.youtube.com/watch?v=ACtL1R2vztk",
+      "categoriaId": 3,
+      "descricao": "",
+      "id": 25
+    },
+    {
+      "titulo": "Star Wars Galaxies",
+      "url": "https://www.youtube.com/watch?v=SP7ugJ84JUk",
+      "categoriaId": 3,
+      "descricao": "",
+      "id": 26
+    },
+    {
+      "titulo": "STAR WARS: A ASCENSÃO SKYWALKER é bom? - Vale Crítica",
+      "url": "https://www.youtube.com/watch?v=mXnZEo-O_FU",
+      "categoriaId": 4,
+      "descricao": "",
+      "id": 27
+    },
+    {
+      "titulo": "STAR WARS: OS ÚLTIMOS JEDI (2017) - Crítica",
+      "url": "https://www.youtube.com/watch?v=LZN8J7JhfoU",
+      "categoriaId": 4,
+      "descricao": "",
+      "id": 28
+    },
+    {
+      "titulo": "STAR WARS: O DESPERTAR DA FORÇA (2015) - Crítica",
+      "url": "https://www.youtube.com/watch?v=G9wuIz2icT0",
+      "categoriaId": 4,
+      "descricao": "",
+      "id": 29
+    },
+    {
+      "titulo": "Star Wars: Episódio I - A Ameaça Fantasma (1999) - Crítica Rápida",
+      "url": "https://www.youtube.com/watch?v=O2GqgHQXNLA",
+      "categoriaId": 4,
+      "descricao": "",
+      "id": 30
+    },
+    {
+      "titulo": "Como fazer um sabre de luz",
+      "url": "https://www.youtube.com/watch?v=p12eqQDEDIk",
+      "categoriaId": 5,
+      "descricao": "",
+      "id": 31
+    },
+    {
+      "titulo": "Entenda a história",
+      "url": "https://www.youtube.com/watch?v=4Phizo62ioA",
+      "categoriaId": 5,
+      "descricao": "",
+      "id": 32
+    },
+    {
+      "titulo": "STAR WARS - Nostalgia",
+      "url": "https://www.youtube.com/watch?v=6mBxfiqQ3lQ",
+      "categoriaId": 5,
+      "descricao": "",
+      "id": 33
+    },
+    {
+      "titulo": "6 TECNOLOGIAS STAR WARS QUE EXISTEM NA VIDA REAL!",
+      "url": "https://www.youtube.com/watch?v=phqdr12sVfU",
+      "categoriaId": 5,
+      "descricao": "",
+      "id": 34
+    },
+    {
+      "titulo": "OS MELHORES MOMENTOS DE STAR WARS DE TODOS OS TEMPOS",
+      "url": "https://www.youtube.com/watch?v=wSLX9FYgsVU",
+      "categoriaId": 6,
+      "descricao": "",
+      "id": 35
+    },
+    {
+      "titulo": "#06 - Melhores Cenas - O Nascimento de Darth Vader",
+      "url": "https://www.youtube.com/watch?v=Q9DL7tjYaYs",
+      "categoriaId": 6,
+      "descricao": "",
+      "id": 36
+    },
+    {
+      "titulo": "Rey destrói o Palpatine DUBLADO | Star Wars: A Ascensão Skywalker (2019)",
+      "url": "https://www.youtube.com/watch?v=A8n67p98dag",
+      "categoriaId": 6,
+      "descricao": "",
+      "id": 37
+    },
+    {
+      "titulo": "Yoda aparece para Luke | Star Wars: Os últimos Jedi | StarWarsFanBR",
+      "url": "https://www.youtube.com/watch?v=SUfZAyVrhpo",
+      "categoriaId": 6,
+      "descricao": "",
+      "id": 38
+    },
+    {
+      "titulo": "Star Wars - Episódio V: O Império Contra-Ataca - 'Eu sou o teu pai' (Dublado em Português do Brasil)",
+      "url": "https://www.youtube.com/watch?v=Sua-tTUo7SU",
+      "categoriaId": 6,
+      "descricao": "",
+      "id": 39
+    },
+    {
+      "titulo": "Star Wars Os Últimos Jedi - Luke Skywalker vs Kylo Ren DUBLADO",
+      "url": "https://www.youtube.com/watch?v=5Jq5x8U5koU",
+      "categoriaId": 6,
+      "descricao": "",
+      "id": 40
     }
   ]
 }
