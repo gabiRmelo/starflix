@@ -30,6 +30,7 @@
 body {
     --bodyPaddingTop: 94px;
     padding-top: var(--bodyPaddingTop);
+    background: black;
 }
 
 @media (max-width: 800px) {
@@ -40,6 +41,7 @@ body {
     body {
     --bodyPaddingTop: 40px;
     padding-top: var(--bodyPaddingTop);
+    line-height: 1.7rem;
     }
 }
 
@@ -69,7 +71,7 @@ body {
         position: fixed;
         left: 0;
         right: 0;
-        bottom: 0;
+        bottom: -15px;
         background: yellow;
         color: black;
         border-radius: 0;

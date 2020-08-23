@@ -9,7 +9,8 @@ function Carousel({
 }) {
   const categoryTitle = category.titulo;
   const categoryColor = category.cor;
-  const categoryExtraLink = category.link_extra;
+  const categoryExtraLinkURL = category.url;
+  const categoryExtraLinkText = category.text;
   const videos = category.videos;
   
   return (
@@ -19,11 +20,9 @@ function Carousel({
           <Title style={{ backgroundColor: categoryColor || 'red' }}>
             {categoryTitle}
           </Title>
-          {categoryExtraLink && 
-            <ExtraLink href={categoryExtraLink.url} target="_blank">
-              {categoryExtraLink.text}  
+            <ExtraLink href={categoryExtraLinkURL} target="_blank">
+              {categoryExtraLinkText}
             </ExtraLink>
-          }
         </>
       )}
       <Slider>

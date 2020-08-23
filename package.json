@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material/snackbar": "^7.0.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -13,10 +14,10 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-slick": "^0.27.2-beta-1",
+    "react-toastify": "^6.0.8",
     "styled-components": "^5.1.1"
   },
   "scripts": {
-    
     "start": "node ./server.js",
     "dev": "concurrently \"react-scripts start\" \"node ./server.js\"",
     "build": "react-scripts build",
@@ -24,7 +25,6 @@
     "eject": "react-scripts eject",
     "server:static": "json-server --watch ./src/data/db.json --port 8080",
     "server": "node ./server.js"
-    
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,4 +51,3 @@
     "eslint-plugin-react-hooks": "^4.0.8"
   }
 }
-

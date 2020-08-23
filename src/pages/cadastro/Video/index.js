@@ -6,10 +6,13 @@ import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import videosRepository from '../../../repositories/videos';
 import categoriasRepository from '../../../repositories/categorias';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 function CadastroVideo() {
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
+  const categoryTitles = categorias.map(({ titulo }) => titulo)
   const { handleChange, values } = useForm({
     titulo: '',
     url: '',
@@ -29,7 +32,7 @@ function CadastroVideo() {
 
   return (
     <PageDefault>
-      <h1>Cadastro de Vídeo</h1>
+      <h2>Cadastro de Vídeo</h2>
 
       <form onSubmit={(event) => {
         event.preventDefault();
@@ -37,18 +40,21 @@ function CadastroVideo() {
         const categoriaEscolhida = categorias.find((categoria) => categoria.titulo === values.categoria);
 
         // console.log('categoriaEscolhida', categoriaEscolhida);
-
-        videosRepository.create({
-          titulo: values.titulo,
-          url: values.url,
-          categoriaId: categoriaEscolhida.id,
-          descricao: values.descricao,
-        })
-
-          .then(() => {
-            console.log('Video cadastrado com sucesso!');
-            history.push('/');
-          });
+        try {
+          videosRepository.create({
+            titulo: values.titulo,
+            url: values.url,
+            categoriaId: categoriaEscolhida.id,
+            descricao: values.descricao,
+          })
+  
+            .then(() => {
+              toast.success('Com sucesso foi cadastrado o vídeo =)')
+            });
+        }
+        catch (error) {
+          toast.error('Cadastrar o vídeo possível não foi =(')
+        }
       }}
       >
         <FormField
@@ -78,18 +84,14 @@ function CadastroVideo() {
           name="categoria"
           value={values.categoria}
           onChange={handleChange}
-          suggestions={
-            [
-              'Filmes',
-              'Séries',
-              'Games',
-            ]
-          }
+          suggestions={categoryTitles}
         />
 
         <Button type="submit">
           Cadastrar Vídeo
         </Button>
+
+        <ToastContainer position="bottom-right" autoClose={4000} />
       </form>
       
       <Link to="/cadastro/categoria">

@@ -1,45 +1,51 @@
 {
   "categorias": [
     {
-      "id": 1,
       "titulo": "Filmes",
-      "cor": "#00008B",
-      "link_extra": {
-        "text": "Quais são os filmes da saga?",
-        "url": "https://revistagalileu.globo.com/Cultura/Cinema/noticia/2019/12/star-wars-quais-sao-os-filmes-da-saga.html"
-      }
+      "cor": "##00008B",
+      "descricao": "bleble",
+      "text": "Quais são os filmes da saga?",
+      "url": "https://revistagalileu.globo.com/Cultura/Cinema/noticia/2019/12/star-wars-quais-sao-os-filmes-da-saga.html",
+      "id": 1
     },
     {
-      "id": 2,
       "titulo": "Séries",
-      "cor": "#ff4500",
-      "link_extra": {
-        "text": "Além dos filmes...",
-        "url": "https://www.starwars.com/series"
-      }
+      "cor": "#0000ff",
+      "descricao": "",
+      "text": "Além dos filmes...",
+      "url": "https://www.starwars.com/series",
+      "id": 2
     },
     {
       "titulo": "Jogos",
       "cor": "#ff00ff",
       "descricao": "",
+      "text": "",
+      "url": "",
       "id": 3
     },
     {
       "titulo": "Crítica",
       "cor": "#00ff00",
       "descricao": "",
+      "text": "",
+      "url": "",
       "id": 4
     },
     {
       "titulo": "Outros",
-      "cor": "#ff0000",
+      "cor": "#ff4500",
       "descricao": "",
+      "text": "",
+      "url": "",
       "id": 5
     },
     {
       "titulo": "Melhores cenas",
       "cor": "#9400dd",
       "descricao": "",
+      "text": "",
+      "url": "",
       "id": 6
     }
   ],

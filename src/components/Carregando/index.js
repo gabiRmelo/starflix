@@ -1,24 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
+import mestreYoda from '../../../src/assets/img/mestre_yoda.png';
 
 const CarregandoAnimacao = styled.div`
   
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: 50vh;
+  flex-direction: column;
+  width: 90vw;
+  height: 90vh;
   align-items: center;
-  margin: 20px;
+  margin: 15px;
+
+  .MestreYoda {
+    height: 20em;
+    align-items: right;
+    margin: 10px;
+  }
 
   .mensagem {
   color: white;
   float: left;
   margin-right: 2%;
+  line-height: 30px;
   }
 
   .carregandoEfeito {
   background-color: black;
-  height: 25px;
+  height: 70px;
   width: 100%;
   overflow: hidden;
   }
@@ -46,10 +55,11 @@ function Carregando() {
       <CarregandoAnimacao>
       <div class="carregandoEfeito">
         <div class="mensagem">
-          Carregando está à página...
+          Carregando está a página...
         </div>
         <div class="cylon_eye"></div>
       </div>
+      <img className="MestreYoda" src={mestreYoda} alt="Mestre Yoda" />
       </CarregandoAnimacao>
   );
 }

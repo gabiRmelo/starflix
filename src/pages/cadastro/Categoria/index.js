@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
@@ -6,11 +7,16 @@ import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
 import categoriasRepository from '../../../repositories/categorias';
 import Carregando from '../../../components/Carregando';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
+
+const CarregandoAnimacao = styled.div`
+  margin: 10px 0 20px 400px;
+`
 
 function CadastroCategoria() {
   const valoresIniciais = {
     titulo: '',
-    descricao: '',
     cor: '',
     text: '',
     url: '',
@@ -40,24 +46,25 @@ function CadastroCategoria() {
         .create({
           titulo: values.titulo,
           cor: values.cor,
-          descricao: values.descricao,
+          text: values.text,
+          url: values.url,
         })
         .then(() => {
           setCategorias([...categorias, values])
           clearForm()
-          //toast.success('Categoria cadastrada com sucesso!')
+          toast.success('Com sucesso foi cadastrada a categoria =)')
         })
-    } catch (error) {
-      //toast.error('Não foi possível cadastar a caterdoria.')
+    } 
+    catch (error) {
+      toast.error('Cadastrar a categoria não foi possível =(')
     }
   }
 
   return (
     <PageDefault>
-      <h1>
+      <h2>
         Cadastro de Categoria:
-        {values.titulo}
-      </h1>
+      </h2>
 
       <form onSubmit={handleSubmit}>
 
@@ -68,26 +75,6 @@ function CadastroCategoria() {
           value={values.titulo}
           onChange={handleChange}
         />
-
-        <FormField
-          label="Descrição"
-          type="textarea"
-          name="descricao"
-          value={values.descricao}
-          onChange={handleChange}
-        />
-
-        {/* <div>
-            <label>
-              Descrição:
-              <textarea
-                type="text"
-                name="descricao"
-                value={values.descricao}
-                onChange={handleChange}
-              />
-            </label>
-          </div> */}
 
         <FormField
           label="Cor"
@@ -109,7 +96,7 @@ function CadastroCategoria() {
             </label>
           </div> */}
 
-      <h1>Link Extra:</h1>
+      <h3>Link Extra:</h3>
 
         <FormField
           label="Texto"
@@ -129,11 +116,14 @@ function CadastroCategoria() {
         <Button type="submit">
           Cadastrar Categoria
         </Button>
+
+        <ToastContainer position="bottom-right" autoClose={4000} />
       </form>
 
       {categorias.length === 0 && (
         <Carregando/>
       )}
+
 
       <ul>
         {categorias.map((categoria) => (
@@ -153,3 +143,4 @@ function CadastroCategoria() {
 }
 
 export default CadastroCategoria;
+

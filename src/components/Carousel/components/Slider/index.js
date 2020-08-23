@@ -21,10 +21,15 @@ const Container = styled.ul`
   }
   
   .slick-prev {
-    left: -50px;
+    left: -30px;
   }
   .slick-next {
     right: 16px;
+  }
+
+  .slick-dots li button:before {
+    color: var(--primary);
+    padding: 1px;
   }
 `;
 
@@ -38,11 +43,10 @@ export const SliderItem = styled.li`
   }
 `;
 
-
 const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{
-      dots: false,
+      dots: true,
       infinite: false,
       speed: 500,
       centerMode: false,

@@ -37,12 +37,17 @@ export const FooterBase = styled.footer`
     }
     
   .Heart {
-    margin: 20px;
+    margin: 15px;
     width: 30px;
     animation: pulse 3s infinite alternate;
   }  
   
   @media (max-width: 800px) {
     margin-bottom: 50px;
+    font-size: 0.8em;
+
+    .Heart {
+      width: 0.8em;
+    }
   }
 `;
